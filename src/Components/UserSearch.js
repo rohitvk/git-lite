@@ -1,7 +1,5 @@
 import React from "react";
 import './UserSearch.css';
-import { getRepos, getUserData } from '../services/github-api';
-
 
 const UserSearch = (props) => { 
     

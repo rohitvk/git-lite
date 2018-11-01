@@ -1,10 +1,13 @@
 .repoContainer{
     text-align: center;
+    padding: 0 10px;
 }
 .repoDetail{
     border: solid 2px lightgrey;
-    margin: 20px 30px;
-    width:300px;
+    margin: 10px 10px;
+    width:380px;
+    height: 149px;
     float:left;
     border-radius:10px;
+    overflow: hidden;
 }

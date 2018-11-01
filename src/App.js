@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import './App.css';
+import { getRepos, getUserData } from './services/github-api';
+
 import UserSearch from './Components/UserSearch';
 import UserDetail from './Components/UserDetail';
-import { getRepos, getUserData } from './services/github-api';
-import Loader from 'react-loader-spinner';
-
-import './App.css';
 import RepoDetail from './Components/RepoDetail';
+import OrgDetail from './Components/OrgDetail';
+
+
+
 
 class App extends Component {
     state = {
         repos : undefined,
         userData: undefined,
-        loading: true
+        orgs:undefined
     }
     getGitData = async(e) => {
             e.preventDefault();
@@ -22,7 +25,7 @@ class App extends Component {
                 this.setState ({
                     repos,
                     userData,
-                    loading: false
+                    orgs: userData.orgs
             });
         }
     } 
@@ -32,7 +35,9 @@ class App extends Component {
             <div>   
                     <UserSearch getGitData={this.getGitData}/>
                     <UserDetail userData = {this.state.userData} />
-                    <RepoDetail repos = {this.state.repos} />       
+                    <OrgDetail orgs = {this.state.orgs} />
+                    <RepoDetail repos = {this.state.repos} /> 
+                          
             </div>
         );
     }

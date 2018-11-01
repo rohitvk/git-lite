@@ -8,7 +8,6 @@ const UserDetail = (props) => {
         const username = userDetail.user.name;
         const location = userDetail.user.location;
         const avatar = userDetail.user.avatar_url;
-        //const orgs = userDetail.orgs;
     return(
           <div className="userDetail"> 
             <div><img className ="userImg" alt="UserImage" src={avatar}></img></div>

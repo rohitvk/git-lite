@@ -1,12 +1,8 @@
 .userDetail{
-    margin: 40px;
-    padding: 30px 30px 10px 30px;
+    margin: 10px 40px;
+    padding: 20px 30px 10px 30px;
     text-align:center;
 }
 img{
     width: 200px;
 }
-/* <div className="userDetail"> 
-<div><img className ="userImg" alt="User Image" src={avatar}></img></div>
-<div><p>Name: {username}</p><p> Location: {location}</p></div>    
-</div> */

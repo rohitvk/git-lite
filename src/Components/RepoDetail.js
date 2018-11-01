@@ -19,7 +19,7 @@ const RepoDetail = (props) => {
                 );
         }); 
         
-        return <div className="repoContainer">User Repository Details{arr}</div>;
+        return <div className="repoContainer"><p style={{fontSize:'20px',fontWeight:'bold'}}>User Repository Details</p>{arr}</div>;
     }else{
         return <div></div>
     }

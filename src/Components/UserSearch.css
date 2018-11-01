@@ -1,0 +1,28 @@
+.form-container{
+    background-color: rgb(28, 149, 197);
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.userName{
+    height: 30px;
+    border-radius: 7px;
+    width: 200px;
+    margin: 0 30px;
+    border: none;
+    padding: 0 10px;
+}
+.subBtn{
+    width: 80px;
+    height: 34px;
+    border-radius:7px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: none;
+}
+.loader{
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+}
